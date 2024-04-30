@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+  
+  <div id=bar> 
+    <ul> 
+      <li><a href=#Home>Home</a> </li>
+      <li><a href=#Register>Register</a> </li>
+      <li><a href=#About_us>About_us</a></li>
+      <li><a href=#Contact_us>Contact_us</a></li>
+    </ul>
+  </div>
+  
+
+  <section id="Home">
+    <h1 id="topMargin">With Counselling you achieve</h1><br> <br>
+  <h2>
+    Clarity on options
+  </h2>
+    <p>Parents, your child's journey is our priority. Explore the vast world of medical colleges, and courses, with ease. The platform breaks down complex information into understandable nuggets, helping you make informed decisions that shape your future.</p>
+    <br><br>
+    
+    <h2> Financial Confidence</h2>
+    <p>We get it -education costs weigh heavily on your minds. That's why we offer insights into fees, scholarships, and financial considerations, ensuring you're well-prepared for this significant investment.</p>
+    <br><br>
+
+    <h2>Future-Proofing</h2>
+    <p>Discover colleges that go beyond academics. Our insights into learning opportunities, post-MBBS options, and college reputation empower you to choose a college that truly aligns with your aspirations. Further, we provide the number of beds available in the hospital attached to the institute to help you understand the hands-on experience you would be getting.</p>
+  </section>
+  <br><br>
+
+  <section id=Register>
+    <h1 id="#formName"> Feel_The_Form </h1>
+    <form id="myForm" action="http://localhost:3000/submit-form" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter name"><br><br>
+  
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter email"><br><br>
+  
+      <label for="mob1">Mobile:</label>
+      <input type="text" id="mob1" name="mob1" placeholder="Enter Number"><br><br>
+  
+      <label for="mob2">Parent Mobile:</label>
+      <input type="text" id="mob2" name="mob2" placeholder="Enter parent_Number"><br><br>
+  
+      <label for="marks">NEET Percentage:</label>
+      <input type="text" id="marks" name="marks" placeholder="Marks obtained in NEET"><br><br>
+  
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter Address"><br><br>
+  
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" placeholder="Write something"></textarea><br><br>
+  
+      <!-- Save button -->
+      <button type="button" id="registerBtn" onclick="addData()">Save</button>
+  
+      <!-- Download Data button -->
+      <button type="button" id="doneBtn" onclick="exportToExcel()">Download Data</button>
+  
+      <!-- Submit button -->
+      <input type="submit" id="submit" value="Submit">
+  </form>
+  
+
+      
+        </form>
+  </section>
+  <br><br>
+
+
+  <section id="About_us">
+      <h1 id="som">Your Ultimate Guide to NEET Counselling</h1>
+      <br><br>
+      <h4> Counselling dates, colleges, courses, fees, cut-offs, and beyond.<br>
+        Let's take the guess work out of your choice filling.</h4>
+        <br><br>
+        <label for="button1"><button id="button1">Get Started</button></label>
+        <br><br>
+        <div id="resultOur">
+
+          <span  id=her1 class="try123">
+            <span  id=1 class="resultText"><h1>10+</h1></span>
+            <span  id=2 class="resultText">years <br>of exprience</span>
+            
+          </span>
+          <br><br>
+          
+          
+          <span  id=her1 class="try123">
+          <span  id=1 class="resultText"><h1>50k</h1></span>
+          <span  id=2 class="resultText">Students <br>Registered</span>
+          </span>
+          <br><br>
+
+
+          <span  id=her1 class="try123">
+          <span  id=1 class="resultText"><h1>1M+</h1></span>
+          <span  id=2 class="resultText">Candidates<br> Served</span>
+          </span>
+          <br><br>
+
+          <span  id=her1 class="try123">
+          <span  id=1 class="resultText"><h1>50k+</h1></span>
+          <span  id=2 class="resultText">Queries<br>Answered</span>
+          </span>
+          <br><br>
+
+        </div>
+
+
+          <div id="rating">
+              <span id="ratingStar"><h4>***<h4></span>
+              <span id="starFrom"> <h4>4.9 / 5 on Google</h4></span>
+          </div>
+        
+        </section>
+        <br><br>
+
+
+      <section id="Contact_us">
+         <div id="contactUs">
+              <span id="questionBox">
+              <p>questions</p>
+              <h1>Contact Us</h1>
+              <p>Reach out to us through any of the ways below 👇</p>
+              </span>
+
+            <span id="emailUs">
+            <h1>Email Us</h1>
+            <p>Email us your queries and we'll help you out.</p>
+            <label for="emailBtn"><button id="emailBtn">123@gmail.com</button></label>
+            </span>
+
+           <div class="whatsapp">
+              <div id="wp1">
+                <label for="wp1Logo"><h1>SL</h1>
+                <h1>Satyam Laidwar</h1>
+                <p>For payments and everything else, contact us here.</p>
+                <br><br>
+                <p>09:00 am to 04:30 pm</p>
+                <label for="wp1btn"><button id="wp1btn">+91 9511709101</button></label>
+              </div>
+
+              <span id="gap"></span>
+
+              <div id="wp1">
+                  <label for="wp1Logo"><h1>AK</h1>
+                  <h1>Akash Lamture</h1>
+                  <p>For all your NEET PG related queries.</p>
+                  <br><br>
+                  <p>10:30 am to 1:30 pm</p>
+                  <label for="wp1btn"><button id="wp1btn">+91 7058541570</button></label>
+              </div>
+
+          </div> 
+
+        </div>
+      </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
